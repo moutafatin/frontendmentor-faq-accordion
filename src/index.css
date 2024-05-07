@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.slideDown {
+    animation: slideDown 300ms ease-out;
+}
+
+
+.slideUp {
+    animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: var(--accordion-height);
+    }
+}
+
+
+@keyframes slideUp {
+    from {
+        height: var(--accordion-height);
+    }
+    to {
+        height: 0;
+    }
+}

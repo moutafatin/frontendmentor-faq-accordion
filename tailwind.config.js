@@ -11,6 +11,12 @@ export default {
       fontFamily: {
         work: ["Work Sans", "sans-serif"],
       },
+      backgroundImage: {
+        "pattern-mobile":
+          "url('./assets/images/background-pattern-mobile.svg')",
+        "pattern-desktop":
+          "url('./assets/images/background-pattern-desktop.svg')",
+      },
     },
   },
   plugins: [],

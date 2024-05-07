@@ -1,13 +1,51 @@
-Personal Frontend Mentor Playground
+# Frontend Mentor - {Challenge name}
 
-Hey there, welcome to my little corner for Frontend Mentor challenges! This repository is my personal setup for tinkering with those awesome projects. Feel free to take a peek if you're curious.
+This is a solution to [challenge name]()
 
-## Inside the Box:
-- React.js: My go-to for building cool interfaces. Keeps things snappy and organized.
-- Tailwind CSS: Styling made breezy with Tailwind CSS. Saves me from writing tons of custom CSS.
+## Table of contents
 
-## Just for Fun:
-This playground is my personal coding sanctuary. If you stumble upon it and find it interesting, cool! But remember, it's customized just for my taste.
+- [Overview](#overview)
+    - [Screenshot](#screenshots)
+    - [Links](#links)
+- [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Useful resources](#useful-resources)
 
-Keep on Coding!
-May your code be bug-free and your designs pixel-perfect! Happy coding! 🎨💻
+## Overview
+
+### Screenshots
+
+![Desktop.png](screenshots/Desktop.png)
+![Mobile.png](screenshots/Mobile.png)
+
+### Links
+
+[Live preview](https://moutafatin.github.io/frontendmentor-faq-accordion)
+
+### My process
+
+#### Built with
+
+- ReactJs
+- Tailwind CSS
+- Custom animation
+- Semantic HTML
+- Flexbox...
+
+#### What I learned
+
+I learned how to use useEffect and useRef.
+I used them to get the accordion content height and set it to a CSS variable for animation.
+
+```ts
+const ref = useRef<HTMLDivElement>(null);
+
+useEffect(() => {
+  document.documentElement.style.setProperty(
+    "--accordion-height",
+    `${ref.current?.scrollHeight}px`,
+  );
+}, [open]);
+```
+
